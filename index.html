@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="ecomeerece.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-services">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#section-groceries">Grocery</a>
+                            <a class="dropdown-item" href="#section-accessories">Accessories</a>
+                            <a class="dropdown-item" href="#section-gadgets">Gadgets</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-offers">Explore offers and deals</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" id="banner-section">
+        <div class="row">
+            <div class="col-12 col-md-7 m-auto text-center">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <a>
+                            <div class="carousel-item active">
+                                <div class="d-flex flex-column justify-content-center car-one-bg ">
+                                    <div>
+                                        <a href="#section-groceries"><img src="https://as2.ftcdn.net/v2/jpg/02/89/44/67/1000_F_289446727_vRX6ctHc8dkaeT0zcKnHSu2w5TWOVtJH.jpg" class="car-one-image" /></a>
+                                    </div>
+                                    <div>
+                                        <h1 class="categ">Groceries upto 50% off</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center car-two-bg">
+                                    <div>
+                                        <a href="#section-accessories"> <img src="https://as2.ftcdn.net/v2/jpg/02/63/87/17/1000_F_263871741_2UrwJ2jmuZxHDO6Vj5uRVHex0BrcE1W7.jpg" class="car-one-image" /></a>
+                                    </div>
+                                    <div>
+                                        <h1 class="categ">Branded Accessories on Buy 1 Get 1 Offer</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center car-three-bg">
+                                    <div>
+                                        <a href="#section-gadgets"> <img src="https://as1.ftcdn.net/v2/jpg/05/02/03/62/1000_F_502036204_X0f0LpDndat2Lmae5HOB8Wzcp1hcc25f.jpg" class="car-one-image" /></a>
+                                    </div>
+                                    <div>
+                                        <h1 class="categ text-dark">Explore our wide category of gadgets</h1>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev arrow" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next text-dark" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div id="section-services">
+        <div class="container p-3">
+            <div class="row ">
+                <div class="col-12">
+                    <h1 class="services-main-heading">Our Services</h1>
+                    <p class="services-content-des">Shopping with us is simpler and quicker.Everything is just a click away!</p>
+                </div>
+                <div class="col-12 col-md-4 mb-5    text-center">
+                    <div class="shadow p-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-delivery-img.png" class="services-image">
+                        <h1 class="services-content-title">Fast and Free Delivery</h1>
+                        <p class="services-content-in">Fast, free and convenient delivery choices on millions of items</p>
+                    </div>
+                </div>
+                <div class="col-12 mb-5 col-md-4   text-center">
+                    <div class="shadow p-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-money-back-img.png" class="services-image">
+                        <h1 class="services-content-title">100% Money back guarantee</h1>
+                        <p class="services-content-in">This is probably the most popular guarantee in the world</p>
+                    </div>
+                </div>
+                <div class="col-12 mb-5 col-md-4   text-center">
+                    <div class="shadow p-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-services-24-by-7-support-img.png" class="services-image">
+                        <h1 class="services-content-title">Online Support 24/7</h1>
+                        <p class="services-content-in">Our Online Support will provide you with many useful functions, valuable information, and resolve all your queries.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container p-5" id="section-products">
+        <div class="row">
+
+            <div class="col-12 col-md-6" id="section-groceries">
+
+                <h1 class="services-main-heading mt-5 ">Groceries</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/71qFN+vMbmL._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">Taj Mahal South-Tea, 1 kg pack</h1>
+                                        <p class="products-price mt-0">Rs.560</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModal">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Taj Mahal South Tea 1 kg Pack, Rich and Flavourful Chai - Premium Blend of Powdered Fresh Loose Tea Leaves</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabel">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>Premium Blend;A perfect combination of strength and flavour that leaves you saying WAH TAJ!</li>
+                                                            <li>Flavor Name: Orange; Material Features: Vegetarian; Ingredients: Tea - Finest Fresh Tea Leaves;</li>
+                                                            <li>Every Taj Mahal cup is created by tasting 1000s of teas then graded and blended to perfection</li>
+                                                            <li>Same great taste of Taj Mahal NOW in a New pack;Country of Origin: India</li>
+                                                            <li>container type:box</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://m.media-amazon.com/images/I/51GyUUKe-0L._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">Fortune Oil, 1 L Pouch Soyabean Health</h1>
+                                            <p class="products-price mt-0">Rs.149</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModaltwo">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModaltwo" tabindex="-1" aria-labelledby="exampleModalLabeltwo" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabeltwo">Fortune Oil, 1 L Pouch Soyabean Health</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabeltwo">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Light, odourless and healthy oil</li>
+                                                                <li>Material Features: Vegetarian;Item Form: Liquid;Flavor Name: Soybean</li>
+                                                                <li>allergen_information:allergen_free | ingredients:Soybean, Rich in Omega 3</li>
+                                                                <li>form_factor:liquid | material_features:vegetarian</li>
+                                                                <li>Country of Origin: India</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/810jp1zceeL._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">Dawat Rozana Super, 5 kg pack</h1>
+                                        <p class="products-price mt-0">Rs.415</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalthree">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalthree" tabindex="-1" aria-labelledby="exampleModalLabelthree" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabelthree">Daawat Rozana Super, Naturally Aged, Rich Aroma,Perfect Fit for Everyday Consumption Basmati Rice, 5 Kg</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabelthree">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>Rozana is above medium length product</li>
+                                                            <li>Original basmati nourished by snow fed rivers of great Himalayas</li>
+                                                            <li>Country of Origin: India</li>
+                                                            <li>Material Features: Vegetarian; Item Form: Grain;</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center ">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://m.media-amazon.com/images/I/61vd63RVqCS._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">Parry's White Label Sugar, 5kg</h1>
+                                            <p class="products-price mt-0">Rs.195</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalfour">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalfour" tabindex="-1" aria-labelledby="exampleModalLabelfour" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabelfour">Parry's White Label Sugar, 5kg</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabelfour">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Superior most variety in sugar</li>
+                                                                <li>Country of Origin: India</li>
+                                                                <li>Highest purity /Free flowing</li>
+                                                                <li>Material Features: Vegetarian; Item Form: Crystal;</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6" id="section-accessories">
+                <h1 class="services-main-heading mt-5">Accessories</h1>
+                <div id="carouselExampleControlstwo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/81f-y9Flq2L._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">Sukkhi Ethnic Jhumki Earring for Women </h1>
+                                        <p class="products-price mt-0">Rs.197</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalfive">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalfive" tabindex="-1" aria-labelledby="exampleModalLabelfive" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabelfive">Sukkhi Ethnic Brass Pearl Gold Plated Kundan Meenakari Jhumki Earring for Women </h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabelfive">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>Dimension : earring length - 5 cm, earring width - 3 cm</li>
+                                                            <li>Quality as per international standards that makes it very skin friendly. Made from quality toxic free material this product assures to remain in its original glory even after years of usage</li>
+                                                            <li>Perfect gift : ideal valentine, birthday, anniversary gift your loved ones. they wear it on different occasion they have special importance on ring ceremony, wedding and festive time. They can also wear it on regular basics</li>
+                                                            <li>Avoid of contact with water and organic chemicals i.e. perfume sprays. Avoid using velvet boxes, and store in air-tight boxes. after use, wipe the jewellery with soft cotton cloth. This will keep your jewellery shining for years</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://m.media-amazon.com/images/I/91Jx9LlD7zL._AC_UL480_FMwebp_QL65_.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">Metal-Bangles Non-Precious Metal Base Metal Zircon Gemstone</h1>
+                                            <p class="products-price mt-0">Rs.500</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalsix">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalsix" tabindex="-1" aria-labelledby="exampleModalLabelsix" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabelsix">NMII Non-Precious Metal Base Metal Zircon Gemstone Or Pearl and Velvet worked Glossy Finished Bangle Set For Women and Girls</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabelsix">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Material:- Non-Precious Metal; Metal Type:- Base Metal; Color:- Radium; Size:- 2.4 Inches; Finish Type:- Glossy ; Design Detail:- The design of this Bangle set can make your look beautiful and attractive, As the material of this Bangle set is made by very good quality material (like: Metal with Zircon Gemstone) and experienced labor as we cannot compromise our clients with the quality of our products. ; Pack Of Details:- A Pair of 42 Bangle Set</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/41s0tEfjlrL.AC_SX250.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">Louis Devin</h1>
+                                        <p class="products-price mt-0">Rs.1000</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalsev">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalsev" tabindex="-1" aria-labelledby="exampleModalLabelsev" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabelsev">LOUIS DEVIN LD-L144-BLU-CH Mesh Steel Chain Analog Wrist Watch for Women</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabelsev">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>Dial Color: Blue | Case Color: Chrome</li>
+                                                            <li>Strap Type: Stainless Steel Mesh Chain; Strap Size: 14 mm</li>
+                                                            <li>Package Contents: 1 Wrist Watch & Warranty Card</li>
+                                                            <li>Warranty Summary: 1 Year Manufacturer's warranty on all the manufacturing defects including the machine movement. Any damages due to wear and tear or mishandling of the product are not covered under warranty. The quartz movement is covered under warranty but the cell is not covered under warranty.</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center ">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://m.media-amazon.com/images/I/41jBBbRE8eL.AC_SX250.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">Matrix Analog Day & Date Display Watch</h1>
+                                            <p class="products-price mt-0">Rs.1200</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModaleig">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModaleig" tabindex="-1" aria-labelledby="exampleModalLabeleig" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabeleig">Matrix Analog Day & Date Display Wrist Watch for Men & Boys (Black)</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabeleig">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Dial : Black , Features : Day & Date Functioning, Mesh Design Silicone Strap</li>
+                                                                <li>Strap Colour : Black , Strap Material : Silicone; Machinery : Japanese Quartz, Case Material : Stainless Steel</li>
+                                                                <li>1 Year Manufacturer Warranty Against Manufacturing Defects</li>
+                                                                <li>Dial Window Material Type: Glass; Band Color: Blue; Bezel Function: No Bezel Available; Item Shape: Round; Dial Color: Blue</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControlstwo" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControlstwo" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container offers" id="section-offers">
+                <div class="row">
+                    <div class="col-12 col-md-2 text-center order-md-2">
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-offers-special-img.png" class="offer-image">
+                    </div>
+                    <div class="col-12 col-md-6 text-center order-md-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-offers-appliances-img.png" class="offer-image">
+                    </div>
+                    <div class="col-12 col-md-4 text-center order-md-1">
+                        <h1 class="text-uppercase offer-pink">Best New Year special offers</h1>
+                        <h1 class="offer-white">Best time to buy.Save upto <span class="sbold">70%</span> cash</h1>
+
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-offers-credit-card-img.png" class="offer-image">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12 col-md-10 m-auto" id="section-gadgets">
+                <h1 class="services-main-heading mt-2 text-md-center">Gadgets</h1>
+                <div id="carouselExampleControlsthree" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://m.media-amazon.com/images/I/71poFSdDs5S._AC_UL480_QL65_.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">OPPO A74 5G</h1>
+                                        <p class="products-price mt-0">Rs.15490</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalnin">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalnin" tabindex="-1" aria-labelledby="exampleModalLabelnin" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabelnin">OPPO A74 5G (Fantastic Purple,6GB RAM,128GB Storage) with No Cost EMI/Additional Exchange Offers</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabelnin">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>6.49" Inch 16.5cm FHD+ Punch-hole Display with 2400x1080 pixels. Larger screen to body ratio of 90.5%.Side Fingerprint Sensor</li>
+                                                            <li>Qualcomm Snapdragon 480 5G GPU 619 at 650 MHz Support 5G sim Powerful 2 GHz Octa-core processor, support LPDDR4X memory and latest UFS 2.1 gear 3 storage</li>
+                                                            <li>48MP Quad Camera 48MP Main + 2MP Macro + 2MP Depth Lens 8MP Front Camera</li>
+                                                            <li>5000 mAh lithium polymer battery</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://images-eu.ssl-images-amazon.com/images/I/31GUbeFG3FL._AC_SX368_.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">boAt Airdopes 141 Bluetooth</h1>
+                                            <p class="products-price mt-0">Rs.1299</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalten">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalten" tabindex="-1" aria-labelledby="exampleModalLabelten" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabelten">boAt Airdopes 141 Bluetooth Truly Wireless in Ear Earbuds with mic, 42H Playtime, Beast Mode(Low Latency Upto 80ms) for Gaming, ENx Tech, ASAP Charge, IWP, IPX4 Water Resistance (Bold Black)</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabelten">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Playback- Enjoy an extended break on weekends with your favourite episodes on stream, virtue of a playback time of up to 42 hours including the 6 hours nonstop playtime for earbuds. Frequency 20Hz-20KHz</li>
+                                                                <li>Low Latency- Our BEAST mode makes these true wireless earbuds a partner in entertainment with real-time audio and low latency experience.</li>
+                                                                <li>Clear Voice Calls- It dons built-in mic on each earbud along with our ENx Environmental Noise Cancellation tech that ensures a smooth delivery of your voice via voice calls.</li>
+                                                                <li>ASAP Charge- The earbuds are equipped with our ASAP Charge feature that offers up to 75 min of playtime in just 5 min of charge; while the carry case comes along with the Type C interface.</li>
+                                                                <li>Instant Connect- Connect to your morning playlists without any hiccup via the Insta Wake N’ Pair technology that powers on these true wireless earbuds as soon as you open the case cover.</li>
+                                                                <li>IP Rating- The earbuds' body comes protected with IPX4 rating for water and sweat resistance.</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex flex-row justify-content-center products-bg text-center">
+
+                                <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                    <div>
+                                        <img src="https://images-eu.ssl-images-amazon.com/images/I/412CjF5u2iL._AC_SX368_.jpg" class="products-image" />
+                                    </div>
+                                    <div class="text-center">
+                                        <h1 class="services-content-in mt-2">Tygot 10 Inches Big LED Ring Light and Tripod</h1>
+                                        <p class="products-price mt-0">Rs.699</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModalele">
+                                            View details
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalele" tabindex="-1" aria-labelledby="exampleModalLabelele" aria-hidden="true">
+
+                                            <div class="modal-dialog modal-dialogue-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabelele">Tygot 10 Inches Big LED Ring Light for Camera, Phone tiktok YouTube Video Shooting and Makeup, 10" inch Ring Light with 7 Feet Long Foldable and Lightweight Tripod Stand</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5 class="modal-title" id="exampleModalLabelele">About this Item</h5>
+
+                                                        <ul class="text-left">
+                                                            <li>RING LIGHT WITH USB - High power 10W Ring LED is suitable for most devices that support USB ports, such as laptops, PCs, mobile power, USB chargers, AC adapters, etc.There are four buttons on the selfie ring light, which can be turned on / off, switch the lighting mode and adjust the brightness level, it is easy to find your favorite option in seconds. Ideal for using lighting in the studio, makeup in the locker room, camping, live streaming, etc.</li>
+                                                            <li>INTELLIGENT AND QUICK COLOR CHANGE - TYGOT makes it easy to adjust the color temperature from 3400K to 5600K easily without using color filters. Achieve cold white light or warm light to hide blemishes and change skin tones quickly and easily. LED SMD design and 220pcs LED beads on our Ring Light offers more light for your camera photography, live streaming, Facebook Live, beauty makeup, selfies and videos./li>
+                                                            <li>DIMMABLE LED RING LIGHT - The LED ring light is equipped with 220 high-quality SMD LEDs and 3 different lighting modes (white light, natural light, and warm light), bright enough to beautify your face. Each lighting mode has 9 adjustable brightness levels to meet all your needs on different occasions. This is the perfect dimmable day lighting to eliminate all unpleasant shadows!</li>
+                                                            <li>PHONE HOLDER AND 7"feet tripod - Each TYGOT Ring Light has a rotating (360 degrees) phone holder and a retractable tripod that effortlessly helps you capture different levels of brightness and angles of lighting! The phone holder is suitable for most smartphones.</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-info">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-center ">
+
+                                    <div class="d-flex flex-column justify-content-end text-center" style="border-style:solid;border-color:#bfbbbb;">
+                                        <div>
+                                            <img src="https://m.media-amazon.com/images/I/71yKtk9XHGL._AC_UL480_QL65_.jpg" class="products-image" />
+                                        </div>
+                                        <div class="text-center">
+                                            <h1 class="services-content-in mt-1">TP-Link USB Bluetooth Adapter for PC</h1>
+                                            <p class="products-price mt-0">Rs.599</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-info mb-2" data-toggle="modal" data-target="#exampleModaltwe">
+                                                View details
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModaltwe" tabindex="-1" aria-labelledby="exampleModalLabeltwe" aria-hidden="true">
+
+                                                <div class="modal-dialog modal-dialogue-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabeltwe">TP-Link USB Bluetooth Adapter for PC, 5.0 Bluetooth Dongle Receiver (UB500) Supports Windows 11/10/8.1/7 for Desktop, Laptop, Mouse, Keyboard, Printers, Headsets, Speakers, PS4/ Xbox Controllers</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <h5 class="modal-title" id="exampleModalLabeleig">About this Item</h5>
+
+                                                            <ul class="text-left">
+                                                                <li>Bluetooth 5.0 —— Applies the latest Bluetooth 5.0 technology, backward compatible with Bluetooth V4.0/3.0/2.1/2.0/1.1</li>
+                                                                <li>Wireless Connectivity —— Provides stable and convenient communication between Bluetooth devices and your PC or laptop</li>
+                                                                <li>Nano-Sized —— Ultra-small for convenient portability with reliable high performance, Supported Operating System – Windows 11/10/8.1/7</li>
+                                                                <li>In an unlikely case of product quality related issue, we may ask you to reach out to brand’s customer service support and seek resolution. We will require brand proof of issue to process replacement request.</li>
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info">Buy Now</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControlsthree" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControlsthree" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="container footer-bg">
+        <div class="row">
+            <div class="col-12 text-center col-md-6 col-lg-3 text-md-left">
+                <div class="d-flex flex-column justify-content-center justify-content-md-start text-center text-md-left">
+                    <div>
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png" class="logo mb-2">
+                    </div>
+                    <div class="d-flex flex-row justify-content-center justify-content-md-start">
+                        <div>
+                            <i class="fab fa-google icon-color icon-bg "></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter icon-color icon-bg"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram icon-color icon-bg"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-linkedin-in icon icon-color icon-bg"></i>
+                        </div>
+                    </div>
+                    <h1 class="footer-content mt-2">37,Ayur Vigyan Nagar,New Delhi, India</h1>
+                </div>
+            </div>
+            <div class="col-6 pt-3 col-md-6 col-lg-3 text-md-left">
+                <h1 class="footer-content-title">Get to Know us</h1>
+                <ul style="list-style-type:none;" class="p-0">
+                    <li class="footer-content ">About Us</li>
+                    <li class="footer-content ">Career</li>
+                    <li class="footer-content ">Press Releases</li>
+                    <li class="footer-content ">Gift a smile</li>
+                </ul>
+            </div>
+            <div class="col-6 pt-3 col-md-6 col-lg-3 text-md-left ">
+                <h1 class="footer-content-title">Contact with us</h1>
+                <ul style="list-style-type:none;" class="p-0">
+                    <li class="footer-content ">Facebook</li>
+                    <li class="footer-content ">Twitter</li>
+                    <li class="footer-content ">Instagram</li>
+                </ul>
+            </div>
+            <div class="col-6 pt-3 col-md-6 col-lg-3 text-md-left ">
+                <h1 class="footer-content-title">Let Us Help You</h1>
+                <ul style="list-style-type:none;" class="p-0">
+                    <li class="footer-content ">100% Purchase</li>
+                    <li class="footer-content ">Protection</li>
+                    <li class="footer-content ">Your Account</li>
+                    <li class="footer-content ">Return center</li>
+                    <li class="footer-content ">Help</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <hr class="hr-line" />
+                <p class="footer-content text-center mt-0 p-0"><i class="far fa-copyright icon-color "></i>2023 by Mathumitha.Created with bootstrap.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
